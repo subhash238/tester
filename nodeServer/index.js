@@ -8,7 +8,14 @@
 // server.listen(PORT,function(){
 //     console.log('chat server runing')
 // })
+// const path = require('path');
+// const express =require("express")
+// const app =express()
+// const publicPath = path.join(__dirname, "../frontend/" );
+// console.log(publicPath)
 const io=require('socket.io')(process.env.PORT||8000);
+// app.use(express.static(publicPath));
+// const port = process.env.PORT || 8000
 
 const users ={}
 
@@ -25,3 +32,7 @@ io.on('connection',Socket=>{
         delete users[Socket.id]
     });
 }) 
+// app.listen(port, ()=>{
+//     console.log(`Server is up on port ${port}`);
+//   })
+  
