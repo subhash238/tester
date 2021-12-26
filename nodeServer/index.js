@@ -8,7 +8,7 @@
 // server.listen(PORT,function(){
 //     console.log('chat server runing')
 // })
-const io=require('socket.io')(8000);
+const io=require('socket.io')(process.env.PORT||8000);
 
 const users ={}
 
