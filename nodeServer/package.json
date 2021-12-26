@@ -1,20 +1,15 @@
-// {
-//   "name": "nodeserver",
-//   "version": "1.0.0",
-//   "description": "this is is nodeserver",
-//   "main": "index.js",
-//   "scripts": {
-//     "test": "echo \"Error: no test specified\" && exit 1"
-//   },
-//   "author": "subhash",
-//   "license": "ISC",
-//   "dependencies": {
-//     "nodemon": "^2.0.15",
-//     "socket.io": "^4.4.0"
-//   }
-// }
 {
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "this is is nodeserver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "subhash",
+  "license": "ISC",
   "dependencies": {
-    "socket.io": "^2.3.0"
+    "socket.io": "^4.4.0"
   }
 }
